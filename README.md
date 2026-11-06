@@ -18,11 +18,13 @@
 
 ## 💰 Sobre o projeto
 
-O **FinanControl** é um sistema de controle financeiro pessoal desenvolvido com uma arquitetura Full Stack, integrando uma API REST, uma aplicação Web e um aplicativo Mobile.
+O **FinanControl** é um sistema de controle financeiro desenvolvido em conjunto com o **professor Douglas Camata**, integrando conhecimentos de desenvolvimento Web, Mobile e Back-End.
 
-O projeto foi desenvolvido com o objetivo de aplicar conhecimentos de desenvolvimento de sistemas, integração entre aplicações, gerenciamento de dados e construção de interfaces.
+O projeto possui uma arquitetura Full Stack, composta por três partes principais: uma API REST, uma aplicação Web e um aplicativo Mobile.
 
-As três partes compartilham a mesma API, permitindo centralizar a comunicação e o gerenciamento das informações.
+Seu objetivo é aplicar conhecimentos de desenvolvimento de sistemas, integração entre aplicações, gerenciamento de dados e construção de interfaces.
+
+As aplicações compartilham a mesma API, centralizando a comunicação e o gerenciamento das informações.
 
 ## ✨ Funcionalidades e módulos
 
@@ -76,16 +78,12 @@ flowchart TB
     C --> D
 ```
 
-<div align="center">
-
 | Camada | Responsabilidade |
-|:---:|---|
+|---|---|
 | 🌐 Web | Interface acessada pelo navegador |
 | 📱 Mobile | Aplicativo para dispositivos móveis |
 | ⚙️ API | Processamento e comunicação entre aplicações |
 | 🗄️ Banco | Armazenamento das informações |
-
-</div>
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -152,8 +150,6 @@ FinanControl/
 │   │   └── swagger.js
 │   └── src/
 │       └── routes/
-│           ├── rotasUsuarios.js
-│           └── rotasCategorias.js
 │
 ├── frontend/
 │   └── FinanControl/
@@ -163,10 +159,7 @@ FinanControl/
 │           ├── App.jsx
 │           ├── main.jsx
 │           ├── pages/
-│           │   ├── Login.jsx
-│           │   └── Principal.jsx
 │           ├── styles/
-│           │   └── Estilos.jsx
 │           └── utils.jsx
 │
 ├── mobile/
@@ -176,11 +169,7 @@ FinanControl/
 │       ├── app.json
 │       └── src/
 │           ├── pages/
-│           │   ├── Login.js
-│           │   ├── Principal.js
-│           │   └── MenuDrawer.js
 │           ├── styles/
-│           │   └── Estilos.js
 │           └── utils.js
 │
 └── .gitignore
@@ -190,13 +179,11 @@ FinanControl/
 
 ### Pré-requisitos
 
-Antes de iniciar, é necessário ter instalado:
-
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Expo](https://expo.dev/)
-- [Expo Go](https://expo.dev/go/) ou emulador configurado.
+- Node.js
+- npm
+- PostgreSQL
+- Expo
+- Expo Go ou emulador configurado.
 
 ### 1. Clonar o repositório
 
@@ -211,21 +198,10 @@ cd FinanControl
 ```bash
 cd api
 npm install
-```
-
-Configure a conexão com o PostgreSQL no arquivo `db.js`, utilizando os dados do seu ambiente local.
-
-Depois, inicie a API:
-
-```bash
 npm start
 ```
 
-A API estará disponível em:
-
-```text
-http://localhost:3000
-```
+Configure a conexão com o PostgreSQL no arquivo `db.js`, utilizando os dados do seu ambiente local.
 
 ### 3. Iniciar o Front-End Web
 
@@ -274,7 +250,7 @@ http://localhost:3000/swagger
 ### Principais endpoints
 
 | Método | Rota | Descrição |
-|:---:|---|---|
+|---|---|---|
 | POST | `/login` | Autenticação |
 | GET | `/usuarios` | Listar usuários |
 | POST | `/usuarios` | Cadastrar usuário |
@@ -286,8 +262,6 @@ http://localhost:3000/swagger
 | DELETE | `/produtos/:id_produto` | Excluir produto |
 | GET | `/categorias` | Listar categorias |
 | POST | `/categorias` | Cadastrar categoria |
-| PUT | `/categorias/:id_categoria` | Atualizar categoria |
-| DELETE | `/categorias/:id_categoria` | Excluir categoria |
 
 ## 🗄️ Banco de dados
 
@@ -321,9 +295,15 @@ Durante o desenvolvimento foram trabalhados conceitos como:
 - Organização e estruturação de projetos.
 - Documentação de APIs com Swagger.
 
+## 👨‍🏫 Desenvolvimento e colaboração
+
+O **FinanControl foi desenvolvido em conjunto com o professor Douglas Camata**, unindo aprendizado, orientação e aplicação prática dos conhecimentos de Desenvolvimento de Sistemas.
+
+A colaboração contribuiu para a construção do projeto e para o aprofundamento dos conceitos de desenvolvimento Web, Mobile e Back-End.
+
 ## 🌱 Objetivo do projeto
 
-O FinanControl representa a aplicação prática de conhecimentos adquiridos durante o curso de Desenvolvimento de Sistemas.
+O FinanControl representa a aplicação prática de conhecimentos adquiridos durante a formação em Desenvolvimento de Sistemas.
 
 O desenvolvimento de três aplicações integradas permite explorar diferentes ambientes de programação e compreender como os componentes de um sistema trabalham em conjunto.
 
@@ -336,6 +316,10 @@ O desenvolvimento de três aplicações integradas permite explorar diferentes a
 *Transformando conhecimentos em soluções.*
 
 <br>
+
+<sub>Desenvolvido em conjunto com o professor Douglas Camata.</sub>
+
+<br><br>
 
 <img src="https://img.shields.io/badge/Desenvolvido%20com-♥%20e%20código-059669?style=for-the-badge" />
 
